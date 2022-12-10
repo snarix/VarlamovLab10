@@ -17,12 +17,8 @@
 
             <GroupBox Grid.Row="2">
                 <Grid>
-                    <Label Content="Введите длину массива"
-                           Margin="250,10,384,146"/>
-                    <TextBox Margin="404,10,10,146"
-                             x:Name="Lenght"/>
                     <Button Margin="10,80,394,80"
-                            Content="Создать массив"
+                            Content="Добавить"
                             Click="Create"/>
                     <Button Margin="10,150,394,10"
                             Content="Найти кол-во значений равных 5 и 7"

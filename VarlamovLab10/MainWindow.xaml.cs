@@ -29,18 +29,8 @@ namespace VarlamovLab10
         List<int> mas = new List<int>();
         private void Create(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(Lenght.Text, out int a))
-            {
-                Random random = new Random();
-                for (int i = 0; i < a; i++)
-                {
-                    mas.Add(random.Next(0, 10));
-                }
-            }
-            else
-            {
-                MessageBox.Show("Ошибка");
-            }
+            Random random = new Random();
+            mas.Add(random.Next(0, 10));
             masList.ItemsSource = null;
             masList.ItemsSource = mas;
         }
